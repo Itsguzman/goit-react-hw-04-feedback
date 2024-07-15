@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './feedback.module.css';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div>
       {options.map(option => (
@@ -22,3 +22,5 @@ FeedbackOptions.propTypes = {
     .isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
+
+export default FeedbackOptions;
